@@ -21,7 +21,7 @@ if st.button('predict'):
   model=joblib.load('iris_model.pkl')
   x=np.array([sepal_length,sepal_width,petal_length,petal_width])
   if any(x<=0):
-    st.markdown('### Inputs must be greater than0')
+    st.markdown('### Inputs must be greater than 0')
   else:
       st.markdown(f'### Prediction is{model.predict([[sepal_length,sepal_width,petal_length,petal_width]])[0]}')
 
