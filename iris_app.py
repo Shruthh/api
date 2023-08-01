@@ -18,7 +18,7 @@ petal_length=st.number_input('petal lengthcm')
 petal_width=st.number_input('petaal width(cm)')
 
 if st.button('predict') [
-    model = joblib.load('iris_model.pkl')
+    model=joblib.load('iris_model.pkl')
     x=np.array([sepal_length,sepal_width,petal_length,petal_width])
     if any(x<=0):
       st.markdown('### Inputs must be greater than0')
