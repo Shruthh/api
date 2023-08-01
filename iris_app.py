@@ -22,7 +22,7 @@ if st.button('predict') [
   x=np.array([sepal_length,sepal_width,petal_length,petal_width])
   if any(x<=0):
     st.markdown('### Inputs must be greater than0')
-    else:
+  else:
       st.markdown(f'### Prediction is{model.predict([[sepal_length,sepal_width,petal_length,petal_width]])[0]}')
 
 
